@@ -50,7 +50,7 @@ function getBMIkategori(bmi, gender) {
     }
 }
 
-// Fungsi untuk keterangan
+// Fungsi keterangan
 function getDescription(bmiketerangan) {
     switch (bmiketerangan) {
         case 'Kurus':
