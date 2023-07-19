@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <h5>
+            <p>berat badan sehat merupakan kesehatan yang harus di teliti unutk kesehatan diri dan tak luput 
+                dari olahraga untuk mendapat tubuh yang ideal yang merupakan mimipi bnyak orang </p>
+        </h5>
+        <h6>Ayo cek kesehatan mu,dan tetap berolahraga agar tetap tubuh ideal</h6></p>
+        <form id="bmiForm">
+            <label for="height">Tinggi (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="weight">Berat (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" required>
+                <option value="male">Laki-Laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+
+            <button type="submit">Hitung BMI</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Hasil</h2>
+            <p>BMI Anda: <span id="bmiValue"></span></p>
+            <p id="bmiCategory"></p>
+            <p id="bmiDescription"></p>
+        </div>
+        <a id="downloadLink" class="hidden" download="hasil_bmi.txt">
+            <button id="downloadButton">Unduh Hasil BMI</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
